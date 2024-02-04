@@ -40,7 +40,7 @@ module bucket_converter() {
 
 module dmx_driver() {
     translate([0, 0, 1.5])
-    color([0, 0, 0])
+    color([0.2, 0.2, 0.2])
         cube([4.1, 15.2, 2.3], center=true);
     translate([1, 7.6, 1.5])
     color([0.8, 0.8, 0])
@@ -49,6 +49,12 @@ module dmx_driver() {
     color([0.8, 0.8, 0])
         cube([1.8, 4.8, 1.5], center=true);
     dmx_driver_module();
+}
+
+module antenna_circuit() {
+    translate([0, 0, 0.8])
+    color([0, 0.6, 0.6])
+        cube([1.55, 6.7, 1], center=true);
 }
 
 $fa = 2;
@@ -61,6 +67,7 @@ translate([+1.4, 20, 0.75]) bucket_converter();
 
 translate([0, 33, 0.75]) dmx_driver();
 
+translate([0, -30, 0.75]) antenna_circuit();
 
 difference() {
     cube([5, 100, 1.5], center=true);
