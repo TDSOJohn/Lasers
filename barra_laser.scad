@@ -57,6 +57,12 @@ module antenna_circuit() {
         cube([1.55, 6.7, 1], center=true);
 }
 
+module laser_drive() {
+    translate([0, 0, 0.8])
+    color([0, 0.7, 0.3])
+        cube([0.85, 2, 0.5], center=true);
+}
+
 $fa = 2;
 $fs = 0.2;
 
@@ -68,6 +74,11 @@ translate([+1.4, 20, 0.75]) bucket_converter();
 translate([0, 33, 0.75]) dmx_driver();
 
 translate([0, -30, 0.75]) antenna_circuit();
+
+translate([0, -10, 0.75]) laser_drive();
+translate([0, +12.5, 0.75]) laser_drive();
+translate([-1.5, +45.6, 0.75]) laser_drive();
+translate([0, -40, 0.75]) laser_drive();
 
 difference() {
     cube([5, 100, 1.5], center=true);
