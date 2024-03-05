@@ -2711,340 +2711,6 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push_DPDT"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_Push_DPDT"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Momentary Switch, dual pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch dual-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_DPDT_0_0"
-				(circle
-					(center -2.032 -5.08)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 5.08)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -7.62)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_Push_DPDT_0_1"
-				(polyline
-					(pts
-						(xy -1.524 -4.826) (xy 2.3368 -3.0988)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 5.334) (xy 2.3368 7.0612)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.016) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.556) (xy 0 4.572)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 7.874) (xy 0 6.096)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 7.62)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_Push_DPDT_1_1"
-				(rectangle
-					(start -3.175 8.89)
-					(end 3.175 -8.89)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 7.62 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Switch:SW_Wuerth_450301014042"
 			(pin_names
 				(offset 1) hide)
@@ -3235,16 +2901,16 @@
 		(uuid "0297a57d-1b40-4715-8c8c-c1c4a07c08f8")
 	)
 	(junction
-		(at 46.99 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e677d36-812f-49df-9946-f3597c6698e4")
-	)
-	(junction
 		(at 157.48 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25db1557-5f5d-478b-96c4-a822aeec03ac")
+	)
+	(junction
+		(at 46.99 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2af82c89-e212-46ef-92a7-147ea5ef4f12")
 	)
 	(junction
 		(at 115.57 115.57)
@@ -3424,16 +3090,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 52.07) (xy 46.99 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "137542bd-0a24-4bfd-8ec4-516d40d8185d")
-	)
-	(wire
-		(pts
 			(xy 267.97 76.2) (xy 266.7 76.2)
 		)
 		(stroke
@@ -3511,6 +3167,16 @@
 			(type default)
 		)
 		(uuid "22400c32-f619-4b37-9263-4dafc5ebd0d7")
+	)
+	(wire
+		(pts
+			(xy 46.99 48.26) (xy 63.5 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2399f259-4135-46ce-bd34-1a767a7c1f91")
 	)
 	(wire
 		(pts
@@ -3631,16 +3297,6 @@
 			(type default)
 		)
 		(uuid "3e5c6f99-c122-45ce-b551-c892fcf4f8d5")
-	)
-	(wire
-		(pts
-			(xy 57.15 49.53) (xy 63.5 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "417ddd47-4feb-4011-a8a8-180df3683131")
 	)
 	(wire
 		(pts
@@ -4642,7 +4298,7 @@
 		)
 		(uuid "2501f6e4-fd75-4564-b527-c645242a1e22")
 	)
-	(text "POE ON/OFF"
+	(text "POE_OUT ON/OFF"
 		(exclude_from_sim no)
 		(at 52.07 68.072 0)
 		(effects
@@ -4654,7 +4310,7 @@
 	)
 	(text "POE_IN ON/OFF"
 		(exclude_from_sim no)
-		(at 69.342 55.88 0)
+		(at 69.342 54.102 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5027,28 +4683,6 @@
 		(uuid "27c9d947-7160-404f-a815-199e4626536a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 95.5138 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VIN"
-		(shape input)
-		(at 57.15 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "283583de-20cf-4b51-8b7e-b4b08daebb0c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.1591 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5599,6 +5233,28 @@
 		(uuid "6166662e-80ed-4e2c-94d2-92b08cb4d787")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 122.1838 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VIN"
+		(shape input)
+		(at 57.15 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66f2f635-6ac5-40b9-91fb-b0c411dd0f12")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.1591 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6644,7 +6300,7 @@
 	)
 	(global_label "VIN"
 		(shape input)
-		(at 73.66 46.99 0)
+		(at 73.66 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6654,7 +6310,7 @@
 		)
 		(uuid "f716fc64-c865-4ab5-a0e2-6266d10d0d4b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.6691 46.99 0)
+			(at 79.6691 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7706,7 +7362,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Wuerth_450301014042")
-		(at 68.58 49.53 0)
+		(at 68.58 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7715,7 +7371,7 @@
 		(fields_autoplaced yes)
 		(uuid "566ac7d9-2605-45b3-bd89-a97e0b4553c8")
 		(property "Reference" "SW2"
-			(at 68.58 40.64 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7723,7 +7379,7 @@
 			)
 		)
 		(property "Value" "SW_SPDT"
-			(at 68.58 43.18 0)
+			(at 68.58 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7731,7 +7387,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
-			(at 68.58 59.69 0)
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7740,7 +7396,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/450301014042.pdf"
-			(at 68.58 57.15 0)
+			(at 68.58 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7749,7 +7405,7 @@
 			)
 		)
 		(property "Description" "Switch slide, single pole double throw"
-			(at 68.58 49.53 0)
+			(at 68.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8427,6 +8083,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Wuerth_450301014042")
+		(at 52.07 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bc22f5a-0275-4ac5-9ee7-6cd1b8001074")
+		(property "Reference" "SW1"
+			(at 52.07 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
+			(at 52.07 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/450301014042.pdf"
+			(at 52.07 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch slide, single pole double throw"
+			(at 52.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64e3fd6d-b246-4596-b2fe-aeaaf2ea6883")
+		)
+		(pin "2"
+			(uuid "09838b87-9328-42eb-807c-5aa7c3a4afa9")
+		)
+		(pin "3"
+			(uuid "5b75f445-f63c-49f6-ac56-0fa49ad1cb29")
+		)
+		(instances
+			(project "dmx_to_pwm"
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 219.71 24.13 90)
 		(unit 1)
@@ -9093,85 +8820,6 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_DPDT")
-		(at 52.07 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ced0b36c-8b27-4872-8532-fb7e1fba1446")
-		(property "Reference" "SW3"
-			(at 52.07 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_DPDT"
-			(at 55.626 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Momentary Switch, dual pole double throw"
-			(at 52.07 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "45ac0f3e-0876-4d22-b512-5f4ed1c5e6ae")
-		)
-		(pin "1"
-			(uuid "413361ee-c28e-4bba-b51a-36f9e21d0d50")
-		)
-		(pin "5"
-			(uuid "0a086cf2-a504-4a8c-9ed6-153070e4e540")
-		)
-		(pin "3"
-			(uuid "cea4e543-436e-4032-a4b9-4b9d7107ed1d")
-		)
-		(pin "4"
-			(uuid "34ea2df1-3f79-4c9f-ac11-c6302424ad4d")
-		)
-		(pin "6"
-			(uuid "93a65923-1249-4461-a387-155c07a4e83a")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
