@@ -4201,6 +4201,26 @@
 		)
 		(uuid "43bb9461-2dfc-4d28-8140-3f3bdd1f0b24")
 	)
+	(text "GREEN IN PROTOTYPE (ORANGE IN RJ45)"
+		(exclude_from_sim no)
+		(at 40.894 41.656 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "635fd926-b365-46f5-8150-88735dd28ade")
+	)
+	(text "BLUE IN PROTOTYPE (WHITE/ORANGE IN RJ45)"
+		(exclude_from_sim no)
+		(at 43.942 32.512 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e3c07712-5136-44bc-8178-5980e0282f91")
+	)
 	(global_label "DATA12"
 		(shape input)
 		(at 167.64 66.04 180)
