@@ -428,8 +428,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Lasers"
+    ],
+    "pinned_symbol_libs": [
+      "lasers_rgb"
+    ]
   },
   "meta": {
     "filename": "dmx_to_pwm.kicad_pro",

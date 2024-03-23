@@ -2231,431 +2231,6 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:LM7812_TO220"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM7812_TO220"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-				(at 0 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 12V, TO-220"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Voltage Regulator 1A Positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO?220*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM7812_TO220_0_1"
-				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LM7812_TO220_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Switch:SW_DP3T"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_DP3T"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -15.875 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at -15.875 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, three position, dual pole triple throw, 3 position switch, SP3T"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch dp3t ON-ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SW* DP3T*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_DP3T_0_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_DP3T_1_1"
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SW_DP3T_2_1"
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Switch:SW_Wuerth_450301014042"
 			(pin_names
 				(offset 1) hide)
@@ -2838,6 +2413,202 @@
 				)
 			)
 		)
+		(symbol "lasers_rgb:LM1085IT-12_NOPB"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 24.13 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LM1085IT-12_NOPB"
+				(at 24.13 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "TO254P470X1028X1955-3P"
+				(at 24.13 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/lm1085"
+				(at 24.13 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "3A Fixed / Adjustable Output Linear Regulator"
+				(at 24.13 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Height" "4.7"
+				(at 24.13 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Texas Instruments"
+				(at 24.13 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "LM1085IT-12/NOPB"
+				(at 24.13 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "926-LM1085IT-12/NOPB"
+				(at 24.13 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM1085IT-12-NOPB?qs=X1J7HmVL2ZFfNHrQjivOkw%3D%3D"
+				(at 24.13 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "LM1085IT-12/NOPB"
+				(at 24.13 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lm1085it-12nopb/texas-instruments?region=nac"
+				(at 24.13 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "LM1085IT-12_NOPB_0_0"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "ADJ/GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "OUTPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "INPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM1085IT-12_NOPB_0_1"
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 22.86 2.54) (xy 22.86 -7.62) (xy 5.08 -7.62) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 120.65 43.18)
@@ -2870,7 +2641,7 @@
 		(uuid "54c577ac-2278-423d-be56-9e505681bd74")
 	)
 	(junction
-		(at 140.97 115.57)
+		(at 173.99 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83ab3ce5-04a4-4e99-a950-70670d0be717")
@@ -2923,6 +2694,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 106.68) (xy 167.64 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02abd684-a24c-4f20-b1c5-49b7be53120c")
+	)
+	(wire
+		(pts
 			(xy 33.02 35.56) (xy 95.25 35.56)
 		)
 		(stroke
@@ -2953,7 +2734,17 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 115.57) (xy 144.78 115.57)
+			(xy 118.11 113.03) (xy 118.11 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07fb3bea-8030-4062-86eb-3a607ba45f32")
+	)
+	(wire
+		(pts
+			(xy 173.99 115.57) (xy 177.8 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2973,7 +2764,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 115.57) (xy 157.48 115.57)
+			(xy 185.42 115.57) (xy 190.5 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2993,16 +2784,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 123.19) (xy 140.97 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c3f1c75-f35d-4c30-9747-0d8979361827")
-	)
-	(wire
-		(pts
 			(xy 267.97 30.48) (xy 266.7 30.48)
 		)
 		(stroke
@@ -3013,7 +2794,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 71.12) (xy 73.66 71.12)
+			(xy 68.58 71.12) (xy 73.66 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3093,16 +2874,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 48.26) (xy 63.5 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2399f259-4135-46ce-bd34-1a767a7c1f91")
-	)
-	(wire
-		(pts
 			(xy 104.14 44.45) (xy 104.14 38.1)
 		)
 		(stroke
@@ -3110,6 +2881,16 @@
 			(type default)
 		)
 		(uuid "2999958a-b998-432f-ab64-57a60d9683db")
+	)
+	(wire
+		(pts
+			(xy 130.81 123.19) (xy 173.99 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a5b2b02-adc6-40da-9992-00ddbaf9c1da")
 	)
 	(wire
 		(pts
@@ -3263,6 +3044,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 113.03) (xy 118.11 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49fa4105-159c-4ca1-b0fc-8b87f271f227")
+	)
+	(wire
+		(pts
 			(xy 167.64 50.8) (xy 170.18 50.8)
 		)
 		(stroke
@@ -3393,16 +3184,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 73.66) (xy 33.02 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5eeec623-fdf6-41c3-82d5-ba962c6907a4")
-	)
-	(wire
-		(pts
 			(xy 120.65 43.18) (xy 120.65 45.72)
 		)
 		(stroke
@@ -3530,6 +3311,16 @@
 			(type default)
 		)
 		(uuid "8327f977-a682-4906-b4aa-ecc1fc933411")
+	)
+	(wire
+		(pts
+			(xy 48.26 48.26) (xy 63.5 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83317b13-8834-4c3a-a2a7-59ebccdb8779")
 	)
 	(wire
 		(pts
@@ -3673,16 +3464,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 68.58) (xy 68.58 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a370571a-1b0b-426a-a3fe-821650a0f45f")
-	)
-	(wire
-		(pts
 			(xy 167.64 53.34) (xy 170.18 53.34)
 		)
 		(stroke
@@ -3703,7 +3484,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 115.57) (xy 140.97 115.57)
+			(xy 167.64 115.57) (xy 173.99 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3720,6 +3501,16 @@
 			(type default)
 		)
 		(uuid "a51f5788-4219-423c-a08c-dd50188f319c")
+	)
+	(wire
+		(pts
+			(xy 167.64 106.68) (xy 167.64 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa774bcb-c0ec-4b67-b982-ded02e0b598f")
 	)
 	(wire
 		(pts
@@ -3823,7 +3614,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 115.57) (xy 123.19 115.57)
+			(xy 115.57 115.57) (xy 127 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3933,7 +3724,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 68.58) (xy 68.58 68.58)
+			(xy 68.58 68.58) (xy 73.66 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4123,7 +3914,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 53.34) (xy 36.83 53.34)
+			(xy 48.26 52.07) (xy 52.07 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4173,7 +3964,7 @@
 	)
 	(text "VOLTAGE REGULATOR ON/OFF"
 		(exclude_from_sim no)
-		(at 97.028 106.426 0)
+		(at 86.614 124.206 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4181,9 +3972,9 @@
 		)
 		(uuid "2501f6e4-fd75-4564-b527-c645242a1e22")
 	)
-	(text "POE_OUT ON/REGULATED/OFF"
+	(text "POE_OUT ON/OFF"
 		(exclude_from_sim no)
-		(at 58.928 90.932 0)
+		(at 56.896 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4239,6 +4030,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "POE_UNREG"
+		(shape input)
+		(at 73.66 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03ae6540-b1fd-4e44-a5db-f749fd148e84")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 87.7123 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4309,7 +4122,7 @@
 			)
 		)
 	)
-	(global_label "VIN"
+	(global_label "VCC"
 		(shape input)
 		(at 120.65 132.08 0)
 		(fields_autoplaced yes)
@@ -4321,7 +4134,7 @@
 		)
 		(uuid "1159d850-cdad-4611-8fb9-e4d41c2a78d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.6591 132.08 0)
+			(at 127.2638 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4331,7 +4144,7 @@
 			)
 		)
 	)
-	(global_label "TO_POE_UNREG"
+	(global_label "POE_UNREG"
 		(shape input)
 		(at 63.5 106.68 0)
 		(fields_autoplaced yes)
@@ -4343,7 +4156,7 @@
 		)
 		(uuid "1179d556-7ad6-4414-a043-c75f7133785c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.818 106.68 0)
+			(at 77.5523 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4487,7 +4300,7 @@
 	)
 	(global_label "DATA+_OUT"
 		(shape input)
-		(at 33.02 71.12 180)
+		(at 68.58 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4497,7 +4310,7 @@
 		)
 		(uuid "1e31fd2e-df99-4ecb-ab5f-7db16f3fec0a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.4514 71.12 0)
+			(at 55.0114 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4729,7 +4542,7 @@
 	)
 	(global_label "POE_GND_IN"
 		(shape input)
-		(at 33.02 53.34 180)
+		(at 48.26 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4739,7 +4552,7 @@
 		)
 		(uuid "2c3804b1-58c3-4399-830a-b9e0e9dc25e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.5443 53.34 0)
+			(at 33.7843 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,6 +4795,28 @@
 		(uuid "428584da-8e2d-47a2-b35c-7229eb424585")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 159.0305 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 127 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45fffc8a-9b7b-46e1-9af8-07ebf73b7b2a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 120.1443 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5389,7 +5224,7 @@
 	)
 	(global_label "POE_VCC_IN"
 		(shape input)
-		(at 33.02 48.26 180)
+		(at 48.26 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5399,7 +5234,7 @@
 		)
 		(uuid "8a2fe53f-2ef7-4d01-88e1-b0e03e044868")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.7862 48.26 0)
+			(at 34.0262 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5563,7 +5398,7 @@
 			)
 		)
 	)
-	(global_label "VIN"
+	(global_label "VCC"
 		(shape input)
 		(at 180.34 16.51 0)
 		(fields_autoplaced yes)
@@ -5575,7 +5410,7 @@
 		)
 		(uuid "a1cf4fc5-c0f9-485e-83f9-f358d120b7ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.3491 16.51 0)
+			(at 186.9538 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5609,7 +5444,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 36.83 53.34 0)
+		(at 52.07 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5619,7 +5454,7 @@
 		)
 		(uuid "a828c79a-78f7-4064-bb39-58c18c1ff383")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.6857 53.34 0)
+			(at 58.9257 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5741,7 +5576,7 @@
 	)
 	(global_label "DATA-_OUT"
 		(shape input)
-		(at 33.02 73.66 180)
+		(at 68.58 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5751,7 +5586,7 @@
 		)
 		(uuid "b0efe160-1fc6-4d19-b4ce-cc7d1971c421")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.4514 73.66 0)
+			(at 55.0114 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6025,9 +5860,9 @@
 			)
 		)
 	)
-	(global_label "VIN"
+	(global_label "VCC"
 		(shape input)
-		(at 157.48 115.57 0)
+		(at 190.5 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6037,7 +5872,7 @@
 		)
 		(uuid "d09b6559-b411-4d2d-8ef0-18b1cd9009de")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.4891 115.57 0)
+			(at 197.1138 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6289,29 +6124,7 @@
 			)
 		)
 	)
-	(global_label "VIN"
-		(shape input)
-		(at 57.15 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ea18abf7-b1d8-414e-ba69-d14ff4e5b1b7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.1591 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TO_POE_UNREG"
+	(global_label "POE_UNREG"
 		(shape input)
 		(at 57.15 87.63 0)
 		(fields_autoplaced yes)
@@ -6323,7 +6136,7 @@
 		)
 		(uuid "ee283d6f-f8ea-4736-a5d8-de8ecbc4e176")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.468 87.63 0)
+			(at 71.2023 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6421,28 +6234,6 @@
 			)
 		)
 	)
-	(global_label "VIN"
-		(shape input)
-		(at 73.66 45.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f716fc64-c865-4ab5-a0e2-6266d10d0d4b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.6691 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape input)
 		(at 182.88 74.93 270)
@@ -6493,7 +6284,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.5mm_P2.50mm"
 			(at 60.6552 125.73 0)
 			(effects
 				(font
@@ -6703,7 +6494,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 219.964 90.424 90)
 			(effects
 				(font
@@ -6721,7 +6512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 219.71 91.44 0)
 			(effects
 				(font
@@ -6858,7 +6649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Differential RS-422/RS-485 bus transceiver, DIP-8"
 			(at 111.76 40.64 0)
 			(effects
 				(font
@@ -6925,7 +6716,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 261.874 117.094 90)
 			(effects
 				(font
@@ -6943,7 +6734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 261.62 118.11 0)
 			(effects
 				(font
@@ -6992,7 +6783,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 261.874 44.704 90)
 			(effects
 				(font
@@ -7010,7 +6801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 261.62 45.72 0)
 			(effects
 				(font
@@ -7061,7 +6852,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 110.1852 58.42 0)
 			(effects
 				(font
@@ -7079,7 +6870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 109.22 54.61 0)
 			(effects
 				(font
@@ -7128,7 +6919,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 261.874 68.834 90)
 			(effects
 				(font
@@ -7146,7 +6937,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 261.62 69.85 0)
 			(effects
 				(font
@@ -7165,78 +6956,6 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM7812_TO220")
-		(at 130.81 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "405fd156-3247-48ce-8d74-c58eef4426e1")
-		(property "Reference" "U5"
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM7812_TO220"
-			(at 130.81 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 130.81 109.855 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-			(at 130.81 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 12V, TO-220"
-			(at 130.81 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f2b445f-2dff-404b-8268-23f4ba0befa7")
-		)
-		(pin "3"
-			(uuid "568f1c82-68ad-45ed-8dbc-194458f92bf6")
-		)
-		(pin "2"
-			(uuid "3f1da9c5-e1be-4bb9-806a-6df17c6a896e")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -7375,7 +7094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Arduino Nano v3.x"
 			(at 182.88 48.26 0)
 			(effects
 				(font
@@ -7484,163 +7203,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Wuerth_450301014042")
-		(at 68.58 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "566ac7d9-2605-45b3-bd89-a97e0b4553c8")
-		(property "Reference" "SW2"
-			(at 68.58 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
-			(at 68.58 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/450301014042.pdf"
-			(at 68.58 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch slide, single pole double throw"
-			(at 68.58 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ecdc91a-0bb7-4082-9aaa-af74c28ccc4d")
-		)
-		(pin "2"
-			(uuid "7bd900c3-0f9a-48f6-ab89-d8bd7d71856b")
-		)
-		(pin "3"
-			(uuid "d5ab2850-edb2-411e-a7c0-3da55f5085a6")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DP3T")
-		(at 52.07 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c32fa8a-4258-4aca-9d69-ecc3e241ccd5")
-		(property "Reference" "SW5"
-			(at 52.07 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DP3T"
-			(at 52.07 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.195 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 36.195 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, three position, dual pole triple throw, 3 position switch, SP3T"
-			(at 52.07 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "90c8819c-063e-4d69-8a71-10ce9747899c")
-		)
-		(pin "1"
-			(uuid "61289915-4022-4b01-abf3-5dad8ab4bdb7")
-		)
-		(pin "6"
-			(uuid "483394ed-cd6f-4481-9756-a6f8bc0750e5")
-		)
-		(pin "3"
-			(uuid "e29a6397-92e2-46b5-82b5-2397aaf4cef4")
-		)
-		(pin "4"
-			(uuid "a385b0ab-41c4-4036-8034-422c2b54a8a4")
-		)
-		(pin "8"
-			(uuid "587cf2c4-f917-44a5-8332-8d14f9689d42")
-		)
-		(pin "5"
-			(uuid "5fe752f2-3d58-4f3d-a545-56aae7fc0e0d")
-		)
-		(pin "2"
-			(uuid "6f315a7c-334c-42b1-b114-cd3031c8f032")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 124.46 35.56 90)
 		(unit 1)
@@ -7665,7 +7227,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 124.714 34.544 90)
 			(effects
 				(font
@@ -7683,7 +7245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 124.46 35.56 0)
 			(effects
 				(font
@@ -7779,6 +7341,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Wuerth_450301014042")
+		(at 68.58 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65a84bfa-2007-4006-a6f0-0122a200c248")
+		(property "Reference" "SW2"
+			(at 68.58 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 68.58 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
+			(at 68.58 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/450301014042.pdf"
+			(at 68.58 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch slide, single pole double throw"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9162c0d-f2cf-45d1-8e5a-f8772b455e7c")
+		)
+		(pin "2"
+			(uuid "8a8aa4eb-472b-4fb5-a341-f42fb57488d0")
+		)
+		(pin "3"
+			(uuid "c8798ebf-196a-45a6-85de-9d60b89d4310")
+		)
+		(instances
+			(project "dmx_to_pwm"
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 95.25 39.37 0)
 		(unit 1)
@@ -7806,7 +7439,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 96.266 39.624 90)
 			(effects
 				(font
@@ -7824,7 +7457,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 95.25 39.37 0)
 			(effects
 				(font
@@ -7849,8 +7482,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Wuerth_450301014042")
+		(at 52.07 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69548de1-ea68-4f31-b379-c3e41fd3a517")
+		(property "Reference" "SW1"
+			(at 52.07 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 52.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
+			(at 52.07 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/450301014042.pdf"
+			(at 52.07 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch slide, single pole double throw"
+			(at 52.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27e4eec4-9ba8-46cf-96aa-511a2ef66176")
+		)
+		(pin "2"
+			(uuid "2dfb5fa7-5a5b-4240-a573-262e8179dc9e")
+		)
+		(pin "3"
+			(uuid "3a328aeb-f5d4-4096-99e3-b5ba9e7aa7f3")
+		)
+		(instances
+			(project "dmx_to_pwm"
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
-		(at 148.59 115.57 180)
+		(at 181.61 115.57 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7859,7 +7563,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c48dea8-0645-493b-80ba-f4a40d64d8cd")
 		(property "Reference" "D2"
-			(at 148.59 109.22 0)
+			(at 181.61 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7867,7 +7571,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 148.59 111.76 0)
+			(at 181.61 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7875,7 +7579,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 148.59 115.57 0)
+			(at 181.61 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7884,7 +7588,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 148.59 115.57 0)
+			(at 181.61 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7893,7 +7597,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 148.59 115.57 0)
+			(at 181.61 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7902,7 +7606,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 148.59 115.57 0)
+			(at 181.61 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7911,7 +7615,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 148.59 115.57 0)
+			(at 181.61 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7962,7 +7666,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 96.266 32.004 90)
 			(effects
 				(font
@@ -7980,7 +7684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 95.25 31.75 0)
 			(effects
 				(font
@@ -8029,7 +7733,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 261.874 91.694 90)
 			(effects
 				(font
@@ -8047,7 +7751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 261.62 92.71 0)
 			(effects
 				(font
@@ -8073,7 +7777,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 140.97 119.38 0)
+		(at 173.99 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8081,7 +7785,7 @@
 		(dnp no)
 		(uuid "81043202-5161-48a6-b377-24171abe665f")
 		(property "Reference" "C5"
-			(at 143.51 118.11 0)
+			(at 176.53 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8090,7 +7794,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 143.51 120.65 0)
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8098,8 +7802,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 141.9352 123.19 0)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 174.9552 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8108,7 +7812,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 119.38 0)
+			(at 173.99 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8117,7 +7821,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 140.97 119.38 0)
+			(at 173.99 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8167,7 +7871,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 82.2452 91.44 0)
 			(effects
 				(font
@@ -8185,7 +7889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 81.28 87.63 0)
 			(effects
 				(font
@@ -8234,7 +7938,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 219.964 44.704 90)
 			(effects
 				(font
@@ -8252,7 +7956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 219.71 45.72 0)
 			(effects
 				(font
@@ -8301,7 +8005,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 219.964 23.114 90)
 			(effects
 				(font
@@ -8319,7 +8023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 219.71 24.13 0)
 			(effects
 				(font
@@ -8370,7 +8074,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 158.496 29.464 90)
 			(effects
 				(font
@@ -8388,7 +8092,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 157.48 29.21 0)
 			(effects
 				(font
@@ -8437,7 +8141,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 219.964 115.824 90)
 			(effects
 				(font
@@ -8455,7 +8159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 219.71 116.84 0)
 			(effects
 				(font
@@ -8524,7 +8228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single High Speed LSTTL/TTL Compatible Optocoupler with enable, dV/dt 1000/us, VCM 10, max 7V VCC, DIP-8"
 			(at 115.57 76.2 0)
 			(effects
 				(font
@@ -8593,7 +8297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.5mm_P2.50mm"
 			(at 116.5352 123.19 0)
 			(effects
 				(font
@@ -8681,7 +8385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Differential RS-422/RS-485 bus transceiver, DIP-8"
 			(at 81.28 73.66 0)
 			(effects
 				(font
@@ -8751,7 +8455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 96.266 48.514 90)
 			(effects
 				(font
@@ -8769,7 +8473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 95.25 48.26 0)
 			(effects
 				(font
@@ -8818,7 +8522,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 218.694 139.954 90)
 			(effects
 				(font
@@ -8836,7 +8540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 218.44 140.97 0)
 			(effects
 				(font
@@ -8885,7 +8589,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 261.874 23.114 90)
 			(effects
 				(font
@@ -8903,7 +8607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 261.62 24.13 0)
 			(effects
 				(font
@@ -8922,6 +8626,151 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lasers_rgb:LM1085IT-12_NOPB")
+		(at 127 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3b8c456-468b-4c25-900d-6682c0fed84b")
+		(property "Reference" "IC1"
+			(at 151.13 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM1085IT-12_NOPB"
+			(at 141.732 119.888 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Lasers:TO254P470X1028X1955-3P"
+			(at 151.13 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/lm1085"
+			(at 151.13 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "3A Fixed / Adjustable Output Linear Regulator"
+			(at 151.13 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "4.7"
+			(at 151.13 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 151.13 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LM1085IT-12/NOPB"
+			(at 151.13 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "926-LM1085IT-12/NOPB"
+			(at 151.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM1085IT-12-NOPB?qs=X1J7HmVL2ZFfNHrQjivOkw%3D%3D"
+			(at 151.13 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "LM1085IT-12/NOPB"
+			(at 151.13 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lm1085it-12nopb/texas-instruments?region=nac"
+			(at 151.13 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8dd8ebf2-de0e-4750-9c8f-6fe3dc7fd6a5")
+		)
+		(pin "2"
+			(uuid "c312d464-df1b-4eca-9869-b58caa935149")
+		)
+		(pin "1"
+			(uuid "22bafe64-7e17-4f30-85dd-f790fffb24e7")
+		)
+		(instances
+			(project "dmx_to_pwm"
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -8952,7 +8801,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 99.314 72.136 90)
 			(effects
 				(font
@@ -8970,7 +8819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 100.33 72.39 0)
 			(effects
 				(font
@@ -9019,7 +8868,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 261.874 139.954 90)
 			(effects
 				(font
@@ -9037,7 +8886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 261.62 140.97 0)
 			(effects
 				(font
@@ -9086,7 +8935,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 219.964 68.834 90)
 			(effects
 				(font
@@ -9104,7 +8953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 219.71 69.85 0)
 			(effects
 				(font
@@ -9173,7 +9022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single High Speed LSTTL/TTL Compatible Optocoupler with enable, dV/dt 1000/us, VCM 10, max 7V VCC, DIP-8"
 			(at 146.05 38.1 0)
 			(effects
 				(font

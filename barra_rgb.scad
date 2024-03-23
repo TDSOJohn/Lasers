@@ -1,4 +1,4 @@
-$fn = 16;
+$fn = 32;
 
 module rgb_laser() {
     difference() {
@@ -10,17 +10,17 @@ module rgb_laser() {
 }
 
 module rgb_holes() {
-    translate([5.5, 5.5, 9])
+    translate([5.5, 10.5, 9])
     cylinder(h = 20, d = 1.5, center = true);
-    translate([34.5, 62.5, 9])
+    translate([34.5, 52.5, 9])
     cylinder(h = 20, d = 1.5, center = true);
-    translate([34.5, 5.5, 9])
+    translate([34.5, 10.5, 9])
     cylinder(h = 20, d = 1.5, center = true);
-    translate([5.5, 62.5, 9])
+    translate([5.5, 52.5, 9])
     cylinder(h = 20, d = 1.5, center = true);
 }
 
-translate([0, 0, 22])
+/*translate([0, 0, 22])
     rgb_laser();
 translate([320, 0, 22])
     rgb_laser();
@@ -28,12 +28,12 @@ translate([640, 0, 22])
     rgb_laser();
 translate([960, 0, 22])
     rgb_laser();
-
+*/
 difference() {
     difference() {
-        cube([1000, 70, 20]);
+        cube([1000, 60, 30]);
         translate([-1, 3, -3])
-        cube([1010, 70, 20]);
+        cube([1010, 60, 30]);
     }
     
     rotate([90, 0, 0])
@@ -46,12 +46,12 @@ difference() {
     translate([940, 9, 0])
     cylinder(h = 20, d = 6, center = true);
 
-    translate([0, 0, 2])
+    translate([0, 0, 25])
     rgb_holes();
-    translate([320, 0, 2])
+    translate([320, 0, 25])
     rgb_holes();
-    translate([640, 0, 2])
+    translate([640, 0, 25])
     rgb_holes();
-    translate([960, 0, 2])
+    translate([960, 0, 25])
     rgb_holes();
 }
