@@ -1,0 +1,8 @@
+Devo controllare 12 laser -->
+
+1) Partono tutti contemporaneamente con digital write (HIGH) o (LOW) a scelta (esclusi quelli con valore 255 se parto LOW o 0 se parto HIGH)
+
+2) In base al valore DMX di ognuno dei 12 laser fa il write corretto.
+
+Se posso ordinare correttamente i valori DMX dei 12 canali a ogni ciclo di istruzioni nuove (ogni volta che fetcho tutti e 12 i canali DMX quindi, cioè ogni 50ms nel caso peggiore), allora è possibile che non servano interrupt o meccanismi asincroni particolari.
+Il problema rimane che ogni 50ms devo aver processato tutti e 512 i canali DMX (0.1ms a canale ca.).
