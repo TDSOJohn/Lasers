@@ -28,7 +28,7 @@ void setup() {
 void loop() {
   unsigned long lastPacket = DMXSerial.noDataSince();
 
-  if(lastPacket < 5000) {
+  if(lastPacket < 50000) {
     if(DMXSerial.read(startChannel) > 100)
       digitalWrite(RedPin, HIGH);
     else
