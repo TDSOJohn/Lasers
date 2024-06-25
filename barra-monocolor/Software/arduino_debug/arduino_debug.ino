@@ -25,17 +25,18 @@ int modulo(int n, int mod) {
 int counter = 0;
 
 void loop() {
-  /*
+  
   analogWrite(Laser1, counter);
   analogWrite(Laser2, modulo(63 - counter, 255));
   analogWrite(Laser3, modulo(counter - 127, 255));
   analogWrite(Laser4, modulo(191 - counter, 255));
-  */
-
+  
+/*
   analogWrite(Laser1, 255);
   analogWrite(Laser2, 255);
   analogWrite(Laser3, 255);
   analogWrite(Laser4, 255);
+*/
   
   counter += 1;
   if (counter > 255) {
