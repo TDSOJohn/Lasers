@@ -34,17 +34,15 @@
 -------------------------------------------------------------------
 
 - software per interfacciare arduino e dmx
-    - gestione canali
-    - default state
+    - [V] gestione canali
+    - [V] default state
 
 - software grassivaro
-
-###    - lettura tabelle waveform
-###    - gestione del tempo
+    - [V] lettura tabelle waveform
+    - [V] gestione del tempo
 
 -------------------------------------------------------------------
 
-###  acquisizione materiale
-- zoccoletti da 8 (20)
+acquisizione materiale
 - keystone rj45  o cavo f-f (20)
 - barrel jack f da cavo

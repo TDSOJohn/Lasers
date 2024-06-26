@@ -15,6 +15,8 @@ void setup() {
   analogWrite(Laser2, 0);
   analogWrite(Laser3, 0);
   analogWrite(Laser4, 0);
+
+  randomSeed(analogRead(0));
 }
 
 

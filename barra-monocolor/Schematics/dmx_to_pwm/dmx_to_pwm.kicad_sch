@@ -293,6 +293,346 @@
 				)
 			)
 		)
+		(symbol "Connector:RJ45"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.08 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "RJ45"
+				(at 2.54 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "8P8C RJ socket connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RJ45_0_1"
+				(polyline
+					(pts
+						(xy -5.08 4.445) (xy -6.35 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.715) (xy -6.35 5.715)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -3.175) (xy -5.08 -3.175) (xy -5.08 -3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.175) (xy -6.35 3.175) (xy -6.35 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
+						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
+						(xy -6.35 -4.445) (xy -6.35 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 12.7)
+					(end -7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "RJ45_1_1"
+				(pin passive line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -391,164 +731,6 @@
 				)
 			)
 			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1912,195 +2094,6 @@
 				)
 			)
 		)
-		(symbol "PJ-031D:PJ-031D"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 16.51 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "PJ-031D"
-				(at 16.51 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "PJ031D"
-				(at 16.51 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.cuidevices.com/product/resource/pdf/pj-031d.pdf"
-				(at 16.51 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Power Connectors Power Jacks"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "7.6"
-				(at 16.51 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "CUI Devices"
-				(at 16.51 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "PJ-031D"
-				(at 16.51 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "490-PJ-031D"
-				(at 16.51 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/PJ-031D?qs=WyjlAZoYn50d9FnDq%252BXSgg%3D%3D"
-				(at 16.51 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" "PJ-031D"
-				(at 16.51 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/pj-031d/cui-devices?region=nac"
-				(at 16.51 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "PJ-031D_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 20.32 -2.54 180)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 0 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Transistor_BJT:BD237"
 			(pin_names
 				(offset 0) hide)
@@ -2311,28 +2304,10 @@
 		(uuid "00249ba6-0ffd-4fde-864d-b99d418da65f")
 	)
 	(junction
-		(at 90.17 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1705924e-98fa-4f3f-b6e1-1f7ac898dcbe")
-	)
-	(junction
 		(at 157.48 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25db1557-5f5d-478b-96c4-a822aeec03ac")
-	)
-	(junction
-		(at 59.69 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54c577ac-2278-423d-be56-9e505681bd74")
-	)
-	(junction
-		(at 85.09 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "856ced46-7ba7-41cd-a6a2-b23fa8c496a2")
 	)
 	(junction
 		(at 180.34 20.32)
@@ -2352,23 +2327,13 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 35.56) (xy 85.09 35.56)
+			(xy 33.02 35.56) (xy 104.14 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "039c6756-167a-42cb-b03e-26ed737dde5e")
-	)
-	(wire
-		(pts
-			(xy 35.56 58.42) (xy 90.17 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "049bbd68-3e55-437a-ad0e-6dbdaeecad80")
 	)
 	(wire
 		(pts
@@ -2382,17 +2347,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 35.56) (xy 104.14 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "129b2b85-0e46-4ab3-aa69-3302c2590405")
-	)
-	(wire
-		(pts
-			(xy 33.02 38.1) (xy 90.17 38.1)
+			(xy 33.02 38.1) (xy 104.14 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2452,16 +2407,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 118.11) (xy 59.69 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a909fbb-0c21-4d8e-a212-f668178f9ac2")
-	)
-	(wire
-		(pts
 			(xy 157.48 33.02) (xy 170.18 33.02)
 		)
 		(stroke
@@ -2469,16 +2414,6 @@
 			(type default)
 		)
 		(uuid "6389c03c-daa6-4356-a8a3-3daf652ad1fa")
-	)
-	(wire
-		(pts
-			(xy 52.07 127) (xy 59.69 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "743ed8e6-2536-41c2-98ad-2c62fbcd7f2c")
 	)
 	(wire
 		(pts
@@ -2502,26 +2437,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 27.94) (xy 85.09 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a6716db-76ea-47d0-aa66-92b9eb3f85a8")
-	)
-	(wire
-		(pts
-			(xy 90.17 38.1) (xy 104.14 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92677327-ee74-45b5-a971-c21dd1ce068e")
-	)
-	(wire
-		(pts
 			(xy 121.92 38.1) (xy 121.92 45.72)
 		)
 		(stroke
@@ -2529,16 +2444,6 @@
 			(type default)
 		)
 		(uuid "9ddf9bfd-1178-4a8c-a44b-627948f7bb75")
-	)
-	(wire
-		(pts
-			(xy 45.72 120.65) (xy 52.07 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e1a742a-947c-4784-9e53-8097b2700e81")
 	)
 	(wire
 		(pts
@@ -2592,36 +2497,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 127) (xy 59.69 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4f0ffe5-e939-4222-ad48-f35b985daf1f")
-	)
-	(wire
-		(pts
-			(xy 34.29 27.94) (xy 85.09 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6b5f203-c319-49d5-9863-a53a3852b554")
-	)
-	(wire
-		(pts
-			(xy 62.23 127) (xy 59.69 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c09f12e4-c48e-4e8f-b89b-23cc3e4c0526")
-	)
-	(wire
-		(pts
 			(xy 119.38 45.72) (xy 121.92 45.72)
 		)
 		(stroke
@@ -2652,16 +2527,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 120.65) (xy 52.07 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdf229e6-1010-43fb-a25d-b5212335a452")
-	)
-	(wire
-		(pts
 			(xy 153.67 35.56) (xy 153.67 33.02)
 		)
 		(stroke
@@ -2679,16 +2544,6 @@
 			(type default)
 		)
 		(uuid "d464a16b-494c-4165-82d0-d6923c0dca9d")
-	)
-	(wire
-		(pts
-			(xy 90.17 58.42) (xy 90.17 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc6290fc-01ad-4636-9041-25921d6dc49d")
 	)
 	(wire
 		(pts
@@ -2740,6 +2595,72 @@
 		)
 		(uuid "e3c07712-5136-44bc-8178-5980e0282f91")
 	)
+	(global_label "DATA-"
+		(shape input)
+		(at 74.93 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "03013af8-8549-4e75-9dd5-20a6f4661920")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 65.9576 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 74.93 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "049bb6de-29aa-4f94-b1a9-d7395d1849fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.3162 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 36.83 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c9f1cc3-f98e-48ca-bccf-2bc5ccf90eb5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.4438 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape input)
 		(at 246.38 29.21 180)
@@ -2780,28 +2701,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DATA+_OUT"
-		(shape input)
-		(at 34.29 27.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1e31fd2e-df99-4ecb-ab5f-7db16f3fec0a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.7214 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -2868,6 +2767,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 74.93 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2dfda305-ae89-41f9-8f70-1b9e48f10f14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.3162 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 36.83 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35956a83-35e5-44e3-aef0-0b4d63e362b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.6857 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2982,7 +2925,29 @@
 			)
 		)
 	)
-	(global_label "DATA+_IN"
+	(global_label "DATA+"
+		(shape input)
+		(at 36.83 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5b8399a6-30f7-434a-8724-edd7fa6bad18")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.8024 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DATA+"
 		(shape input)
 		(at 33.02 35.56 180)
 		(fields_autoplaced yes)
@@ -2994,7 +2959,29 @@
 		)
 		(uuid "5be379c3-6ffd-4d03-a4c5-e0c3926d52af")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.1447 35.56 0)
+			(at 24.0476 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 74.93 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60e35729-84c5-48bf-9f8a-67a69eb05d4f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.0743 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3048,6 +3035,50 @@
 			)
 		)
 	)
+	(global_label "VCC"
+		(shape input)
+		(at 36.83 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7db55b5d-c4ff-4d8c-9f35-3976b2ac6238")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.4438 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 36.83 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8431a7f7-a28b-43ff-895b-c6d4bd7710dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.6857 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LASER3"
 		(shape input)
 		(at 246.38 64.77 180)
@@ -3092,7 +3123,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+4V BUCKET"
 		(shape input)
 		(at 261.62 49.53 180)
 		(fields_autoplaced yes)
@@ -3104,7 +3135,7 @@
 		)
 		(uuid "89bddc56-f2d2-46c5-acb3-2f879c1a4372")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 254.7643 49.53 0)
+			(at 246.5396 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,6 +3167,50 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 74.93 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9a2de47a-8e23-4bfc-957d-6672c1a73ea4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.0743 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 36.83 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9dd98088-7068-4989-8642-c0d12b097b9a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.6857 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCC"
 		(shape input)
 		(at 180.34 16.51 0)
@@ -3154,6 +3229,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 74.93 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a33766a3-743d-4525-8ea6-2d7ca4e8a59f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.3162 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3180,6 +3277,50 @@
 			)
 		)
 	)
+	(global_label "DATA-"
+		(shape input)
+		(at 36.83 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aa2a7512-9757-472a-b121-13aebd704c03")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.8024 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 36.83 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af241e9b-f39e-45b0-8afc-7b38dfd5d65c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.4438 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape input)
 		(at 248.92 72.39 180)
@@ -3202,9 +3343,9 @@
 			)
 		)
 	)
-	(global_label "DATA-_OUT"
+	(global_label "DATA+"
 		(shape input)
-		(at 35.56 58.42 180)
+		(at 74.93 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3212,9 +3353,9 @@
 			)
 			(justify right)
 		)
-		(uuid "b0efe160-1fc6-4d19-b4ce-cc7d1971c421")
+		(uuid "be499298-d8aa-440a-8d96-c44f65439eb9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.9914 58.42 0)
+			(at 65.9576 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3224,7 +3365,7 @@
 			)
 		)
 	)
-	(global_label "DATA-_IN"
+	(global_label "DATA-"
 		(shape input)
 		(at 33.02 38.1 180)
 		(fields_autoplaced yes)
@@ -3236,7 +3377,7 @@
 		)
 		(uuid "be622ae3-c4c8-4e40-865c-9b03bb97bf85")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.1447 38.1 0)
+			(at 24.0476 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3312,6 +3453,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 74.93 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7fd672c-0e9f-4ff6-b04d-a7dade8ca767")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.0743 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCC"
 		(shape input)
 		(at 111.76 50.8 0)
@@ -3325,28 +3488,6 @@
 		(uuid "e8daf11b-a024-4094-afe3-810874a55430")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 118.3738 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape input)
-		(at 62.23 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f5625cd7-c027-4ff3-9afe-23f423c8a782")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.0857 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3379,219 +3520,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 59.69 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04a7d704-dc94-4d94-b266-4cb2146c7754")
-		(property "Reference" "C3"
-			(at 63.5 119.7609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 63.5 122.3009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.5mm_P2.50mm"
-			(at 60.6552 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 59.69 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1dd92bbc-703a-4bd0-94b2-e1ae65fe250a")
-		)
-		(pin "2"
-			(uuid "e4d55bba-f8d7-4b4d-be2a-18ea322f0638")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PJ-031D:PJ-031D")
-		(at 25.4 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0676bdc3-ef29-46b1-aa90-75e82d03dd5d")
-		(property "Reference" "J4"
-			(at 35.56 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-031D"
-			(at 35.56 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PJ031D"
-			(at 41.91 213.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.cuidevices.com/product/resource/pdf/pj-031d.pdf"
-			(at 41.91 313.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Power Connectors Power Jacks"
-			(at 25.4 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "7.6"
-			(at 41.91 513.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "CUI Devices"
-			(at 41.91 613.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "PJ-031D"
-			(at 41.91 713.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "490-PJ-031D"
-			(at 41.91 813.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/PJ-031D?qs=WyjlAZoYn50d9FnDq%252BXSgg%3D%3D"
-			(at 41.91 913.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" "PJ-031D"
-			(at 41.91 1013.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/pj-031d/cui-devices?region=nac"
-			(at 41.91 1113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5832b11f-8982-49d8-a8a2-de7ad55dd9f5")
-		)
-		(pin "2"
-			(uuid "9069110e-f69a-4adb-af23-d16247452e8c")
-		)
-		(pin "3"
-			(uuid "edcfd183-2625-4d5d-87f7-450c455d8424")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 176.53 20.32 90)
 		(unit 1)
@@ -3608,7 +3536,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "10uF"
 			(at 176.53 17.018 90)
 			(effects
 				(font
@@ -3960,6 +3888,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:RJ45")
+		(at 85.09 90.17 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c274723-36c2-4f86-aa18-2e3bc6b669f1")
+		(property "Reference" "J3"
+			(at 93.98 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RJ45 OUT"
+			(at 93.98 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 90.805 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 90.805 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 85.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "831cf72d-809f-491f-9b5e-9dde7b74a763")
+		)
+		(pin "8"
+			(uuid "9d52a11c-d237-46e8-a9e7-d539f33f7026")
+		)
+		(pin "4"
+			(uuid "d2eafe3f-92a9-4529-a3f1-d16689ca8ac5")
+		)
+		(pin "6"
+			(uuid "c162fd1b-e024-41f6-a2f2-1cfa333f1c5e")
+		)
+		(pin "7"
+			(uuid "84c81dc1-26d0-4da8-a54f-6a1463245da9")
+		)
+		(pin "5"
+			(uuid "52cbd48e-611d-4e2e-acca-b14466c611f0")
+		)
+		(pin "2"
+			(uuid "0df1e281-9230-4124-b54f-c5e2ac758dcd")
+		)
+		(pin "3"
+			(uuid "8bc44495-80b7-4152-9886-197829b01f82")
+		)
+		(instances
+			(project "dmx_to_pwm"
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 250.19 64.77 90)
 		(unit 1)
@@ -4099,6 +4115,92 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ45")
+		(at 26.67 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49b5439c-3c8c-4a61-a495-e3c3de0f0e35")
+		(property "Reference" "J2"
+			(at 26.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ45 IN"
+			(at 26.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 93.345 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 93.345 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 26.67 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d8bf6f9-8fe9-4edd-a4b0-f3c505be3b12")
+		)
+		(pin "8"
+			(uuid "b8fd9fb7-7463-48c5-a082-efe8d558038d")
+		)
+		(pin "4"
+			(uuid "3eab06b5-b673-4df9-a99e-c1bf5854310f")
+		)
+		(pin "6"
+			(uuid "3adc4061-f7ee-471f-bdde-3f3aac8fc91a")
+		)
+		(pin "7"
+			(uuid "d2944c06-0887-4f39-9d8e-15c8814b1390")
+		)
+		(pin "5"
+			(uuid "f03f4cf5-4a31-433c-a63f-52fe92b67f6c")
+		)
+		(pin "2"
+			(uuid "aabc23cb-bd11-485c-b216-d262fb580ec5")
+		)
+		(pin "3"
+			(uuid "96dac18f-f706-4859-972f-1dbebe50b5fc")
+		)
+		(instances
+			(project "dmx_to_pwm"
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "J2")
 					(unit 1)
 				)
 			)
