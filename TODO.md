@@ -12,22 +12,16 @@
 
 -------------------------------------------------------------------
 
-### - lavorazione barre rosse (fori fissaggio)
-### - lavorazione barre nuove (fori laser, fori fissaggio)
-### - lavorazione barre verdi (fori fissaggio)
-
 - sostituzione diodi e driver rotti
 - montaggio laser verdi nuovi
-- driver/cablaggio barre verdi nuove
 - costruzione driver mancanti
 
-- cablaggio barre rosse (rimozione bucket)
-- terminazioni barre
+### - driver/cablaggio barre verdi nuove
+### - cablaggio barre rosse
 
 -------------------------------------------------------------------
 
-- saldatura schede
-- terminazioni schede
+### - saldatura schede
 - saldatura poe injector
 - saldatura connettori batterie
 
