@@ -67,9 +67,7 @@ void loop() {
   analogWrite(Laser3, data[step][2]);
   analogWrite(Laser4, data[step][3]);
   
-  step += 1;
-  if (step > 15) {
-    step = 0;
-  }
+  step = rand() % 16;
+  
   delay(1000 / speed);
 }
