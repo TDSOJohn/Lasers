@@ -1,6 +1,8 @@
 
 #include <DMXSerial.h>
 
+#include "data.h"
+
 const int bar_id = 0;
 
 const int Laser1 = 3;
@@ -15,6 +17,12 @@ const int startChannel = bar_id * 4 + 1;
 #define L3DefaultLevel 255
 #define L4DefaultLevel 255
 
+byte speed = 10;
+
+// 0 for ALL ON
+// 1 for FUN MODE
+// 2 for DMX MODE
+byte mode = 2;
 
 void setup() {
   // initialize dmx serial as receiver
@@ -34,20 +42,33 @@ void setup() {
   analogWrite(Laser2, L2DefaultLevel);
   analogWrite(Laser3, L3DefaultLevel);
   analogWrite(Laser4, L4DefaultLevel);
+
+  randomSeed(analogRead(0));
 }
+
+int step = 0;
 
 void loop() {
   unsigned long lastPacket = DMXSerial.noDataSince();
 
-  if(lastPacket < 10000) {
+  if(mode == 2 && lastPacket < 10000) {
     analogWrite(Laser1, DMXSerial.read(startChannel));
     analogWrite(Laser2, DMXSerial.read(startChannel + 1));
     analogWrite(Laser3, DMXSerial.read(startChannel + 2));
     analogWrite(Laser4, DMXSerial.read(startChannel + 3));
+  } else if(mode == 1) {
+    analogWrite(Laser1, data[step][0]);
+    analogWrite(Laser2, data[step][1]);
+    analogWrite(Laser3, data[step][2]);
+    analogWrite(Laser4, data[step][3]);
+    
+    step = rand() % 16;
+    
+    delay(1000 / speed);
   } else {
-    analogWrite(Laser1, L1DefaultLevel);
-    analogWrite(Laser2, L2DefaultLevel);
-    analogWrite(Laser3, L3DefaultLevel);
-    analogWrite(Laser4, L4DefaultLevel);
+      analogWrite(Laser1, L1DefaultLevel);
+      analogWrite(Laser2, L2DefaultLevel);
+      analogWrite(Laser3, L3DefaultLevel);
+      analogWrite(Laser4, L4DefaultLevel);    
   }
 }

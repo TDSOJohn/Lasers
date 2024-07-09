@@ -19,14 +19,6 @@ void setup() {
   randomSeed(analogRead(0));
 }
 
-
-int modulo(int n, int mod) {
-  if (n >= 0)
-    return (n % mod);
-  else
-    return ((n + mod) % mod);
-}
-
 void move_to(int step1, int step2) {
   int vals[4] = {data[step1][0], data[step1][1], data[step1][2], data[step1][3]};
   
