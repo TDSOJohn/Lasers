@@ -3,7 +3,7 @@
 
 #include "data.h"
 
-const int bar_id = 0;
+const int bar_id = 3;
 
 const int Laser1 = 3;
 const int Laser2 = 5;
@@ -24,6 +24,9 @@ byte speed = 10;
 // 2 for DMX MODE
 byte mode = 2;
 
+void changeMode() {
+  mode = (mode + 1) % 3;
+}
 void setup() {
   // initialize dmx serial as receiver
   DMXSerial.init(DMXReceiver);
@@ -44,6 +47,9 @@ void setup() {
   analogWrite(Laser4, L4DefaultLevel);
 
   randomSeed(analogRead(0));
+
+  pinMode(2, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(2), changeMode, CHANGE);
 }
 
 int step = 0;
