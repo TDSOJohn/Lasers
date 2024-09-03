@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.1</Version>
@@ -10,9 +10,7 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN290321)" Line="0">
-     <PluginParameters UniverseChannels="24"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN290321)" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -314,12 +312,12 @@
    <Speed FadeIn="0" FadeOut="0" Duration="171"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Stripes</Algorithm>
+   <Algorithm Type="Script">Noise</Algorithm>
    <MonoColor>4294967295</MonoColor>
    <EndColor>4294967295</EndColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="orientation" Value="Vertical"/>
+   <Property Name="noisePercentage" Value="High"/>
   </Function>
  </Engine>
  <VirtualConsole>
