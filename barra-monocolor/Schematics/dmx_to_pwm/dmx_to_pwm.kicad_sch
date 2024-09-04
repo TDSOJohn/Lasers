@@ -9114,6 +9114,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:RJ45")
+		(at 130.81 48.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42254ff8-1c8e-4400-acdf-1f8afadbec85")
+		(property "Reference" "J2"
+			(at 139.7 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RJ45"
+			(at 139.7 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 130.81 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "ca3c1628-72c1-4633-bbdb-eba0680604b7")
+		)
+		(pin "7"
+			(uuid "27b0e77c-a334-405a-9968-00b79d2dc96c")
+		)
+		(pin "3"
+			(uuid "7d704ee6-a3e3-4fe2-aa30-c4e716927b21")
+		)
+		(pin "2"
+			(uuid "a55a84e5-08ad-41b1-b7d1-4f32252de74b")
+		)
+		(pin "1"
+			(uuid "61d594f2-32c6-41fe-ba13-b9df873b5f68")
+		)
+		(pin "8"
+			(uuid "ba78e5a8-bbd8-46ce-a4ed-42f914d39c51")
+		)
+		(pin "6"
+			(uuid "bf5cece1-2f2d-4602-a1c4-57f002c4806c")
+		)
+		(pin "4"
+			(uuid "0f79fcf6-0778-44ca-9bfc-065d93e1f187")
+		)
+		(instances
+			(project ""
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 97.79 160.02 90)
 		(unit 1)
@@ -9415,6 +9503,92 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ45")
+		(at 87.63 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55fbc353-30f5-48b0-b1dd-d79e833e789c")
+		(property "Reference" "J1"
+			(at 87.63 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ45"
+			(at 87.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+			(at 87.63 50.165 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 50.165 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 87.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "262efdbf-4946-4886-bb47-3a9569a8c01b")
+		)
+		(pin "2"
+			(uuid "28cadb62-81e1-4390-a379-b47ef307fca7")
+		)
+		(pin "1"
+			(uuid "1fc6358d-0cad-486f-8d4c-ef853a8918fb")
+		)
+		(pin "6"
+			(uuid "bc2abac8-0894-4bf6-a792-e40ae7c97f6e")
+		)
+		(pin "7"
+			(uuid "db1c0703-7af9-4581-aa12-4461d22fb57f")
+		)
+		(pin "8"
+			(uuid "290f3541-14c2-4eb9-995d-4d05b7670767")
+		)
+		(pin "5"
+			(uuid "25907eb6-b01b-4599-ab90-cf8a4c784274")
+		)
+		(pin "4"
+			(uuid "3c98338c-6de7-48d7-b6b4-bbe1ef6c2199")
+		)
+		(instances
+			(project ""
+				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -10412,94 +10586,6 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:RJ45")
-		(at 130.81 48.26 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95a52953-716c-42b1-9386-4c802b8a1a74")
-		(property "Reference" "J2"
-			(at 139.7 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "RJ45 OUT"
-			(at 139.7 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 48.895 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 48.895 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 130.81 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "27ad6d26-2970-44e3-9284-5338b099d4b5")
-		)
-		(pin "8"
-			(uuid "34ba050b-4d9f-4979-9d07-7f3a81ff84c0")
-		)
-		(pin "4"
-			(uuid "3fac7e60-bfc9-44f9-ad20-b7c251fc1c1e")
-		)
-		(pin "6"
-			(uuid "99128b9d-3dfc-4949-a618-448222baa7a9")
-		)
-		(pin "7"
-			(uuid "079918b0-1115-46b0-8c58-b465a865f709")
-		)
-		(pin "5"
-			(uuid "cafb45da-3b8e-46a7-a31e-e56509cf8db6")
-		)
-		(pin "2"
-			(uuid "4485a615-b1fa-4b5e-be4a-35444de29a6b")
-		)
-		(pin "3"
-			(uuid "a5bc3852-1378-49d9-af58-ed701d53eb0f")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -11614,92 +11700,6 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "A1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:RJ45")
-		(at 87.63 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f3cea13f-68be-4c3b-9b1f-f81b32519255")
-		(property "Reference" "J1"
-			(at 87.63 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45 IN"
-			(at 87.63 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 50.165 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 87.63 50.165 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 87.63 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48450b57-d069-474a-8315-4cf81ef3dfe8")
-		)
-		(pin "8"
-			(uuid "cd6881ff-c0d6-49e7-9af7-ee883cdf8c5c")
-		)
-		(pin "4"
-			(uuid "bc511171-210e-47d1-9bd5-05d6624af4d8")
-		)
-		(pin "6"
-			(uuid "9b2e11c9-a7c0-4c06-8955-88bc4168f691")
-		)
-		(pin "7"
-			(uuid "7726ef09-9115-4a36-8286-0eff15691404")
-		)
-		(pin "5"
-			(uuid "1e5c5827-6b6a-4772-bd94-ce90d4f1bc74")
-		)
-		(pin "2"
-			(uuid "bc2ee660-6e54-4c38-8a13-3571cab47603")
-		)
-		(pin "3"
-			(uuid "10c6132e-70d3-4b95-badd-bba04b0ed559")
-		)
-		(instances
-			(project "dmx_to_pwm"
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "J1")
 					(unit 1)
 				)
 			)
