@@ -20540,14 +20540,6 @@
 		(uuid "931d89f8-7df1-4e6a-89b6-aadba867b9ec")
 	)
 	(segment
-		(start 113.381777 184.985)
-		(end 113.455 184.911777)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 0)
-		(uuid "5758323f-57f7-4f8f-ac88-246a3ad8be9b")
-	)
-	(segment
 		(start 107.95 129.54)
 		(end 110.49 127)
 		(width 0.25)
