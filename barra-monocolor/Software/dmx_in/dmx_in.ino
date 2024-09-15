@@ -3,7 +3,7 @@
 
 #include "data.h"
 
-const int bar_id = 0;
+const int bar_id = 4;
 
 const int Laser1 = 3;
 const int Laser2 = 5;

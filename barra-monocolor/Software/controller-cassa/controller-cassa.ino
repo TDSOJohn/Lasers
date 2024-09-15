@@ -84,11 +84,11 @@ void loop() {
     
     delay(1000 / speed);
   } else {
-    analogWrite(Laser1, L1DefaultLevel);
-    analogWrite(Laser2, L2DefaultLevel);
-    analogWrite(Laser3, L3DefaultLevel);
-    analogWrite(Laser4, L4DefaultLevel);    
-    analogWrite(Laser5, L5DefaultLevel);    
-    analogWrite(Laser6, L6DefaultLevel);    
+      analogWrite(Laser1, L1DefaultLevel);
+      analogWrite(Laser2, L2DefaultLevel);
+      analogWrite(Laser3, L3DefaultLevel);
+      analogWrite(Laser4, L4DefaultLevel);    
+      analogWrite(Laser5, L5DefaultLevel);    
+      analogWrite(Laser6, L6DefaultLevel);    
   }
 }
