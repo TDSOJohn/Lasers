@@ -9,7 +9,11 @@
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
-   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN290321)" Line="0">
+     <PluginParameters UniverseChannels="38"/>
+    </Output>
+   </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -444,7 +448,7 @@
    <Head X="2" Y="4" Fixture="36">0</Head>
    <Head X="3" Y="4" Fixture="37">0</Head>
   </FixtureGroup>
-  <Function ID="0" Type="RGBMatrix" Name="New RGB Matrix-13">
+  <Function ID="0" Type="RGBMatrix" Name="Matrix-13">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -453,8 +457,9 @@
    <EndColor>4294967295</EndColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Vertical"/>
   </Function>
-  <Function ID="1" Type="RGBMatrix" Name="New RGB Matrix-5">
+  <Function ID="1" Type="RGBMatrix" Name="Matrix-5">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -473,11 +478,6 @@
    <EndColor>4294967295</EndColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>2</FixtureGroup>
-  </Function>
-  <Function ID="4" Type="Script" Name="New Script 4">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
   </Function>
  </Engine>
  <VirtualConsole>

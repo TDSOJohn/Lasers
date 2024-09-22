@@ -1,8 +1,6 @@
 #include <DMXSerial.h>
 
 
-const int bar_id = 1;
-
 const int Laser1 = 3;
 const int Laser2 = 5;
 const int Laser3 = 6;
@@ -16,6 +14,8 @@ const int Laser6 = 11;
 #define L4DefaultLevel 255
 #define L5DefaultLevel 255
 #define L6DefaultLevel 255
+
+const int startChannel = 17;
 
 
 void setup() {
@@ -49,7 +49,7 @@ void setup() {
 void loop() {
   unsigned long lastPacket = DMXSerial.noDataSince();
 
-  if(mode == 2 && lastPacket < 10000) {
+  if(lastPacket < 10000) {
     analogWrite(Laser1, DMXSerial.read(startChannel));
     analogWrite(Laser2, DMXSerial.read(startChannel + 1));
     analogWrite(Laser3, DMXSerial.read(startChannel + 2));
