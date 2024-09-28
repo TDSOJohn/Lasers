@@ -3,7 +3,7 @@
 
 #include "data.h"
 
-const int bar_id = 1;
+const int bar_id = 0;
 
 const int Laser1 = 3;
 const int Laser2 = 5;
@@ -17,7 +17,11 @@ const int startChannel = bar_id * 4 + 1;
 #define L3DefaultLevel 255
 #define L4DefaultLevel 255
 
-byte speed = 10;
+#define DIP_SWITCH_SIZE 8;
+
+byte speed = 20;
+
+const int SWITCH_PINS[] = {A0, A1, A2, A3, A4, A5, A6, A7};
 
 // 0 for ALL ON
 // 1 for FUN MODE
@@ -46,10 +50,19 @@ void setup() {
   analogWrite(Laser3, L3DefaultLevel);
   analogWrite(Laser4, L4DefaultLevel);
 
-  randomSeed(analogRead(0));
+  for(int i = 0; i < DIP_SWITCH_SIZE; i++)
+    pinMode(SWITCH_PINS[i], INPUT_PULLUP);
+    delay(50);
+  
+  int dip_switch_state = 0;
+  for(int i = 0; i < DIP_SWITCH_SIZE; i++) {
+    int state = digitalRead(SWITCH_PINS[i]);
 
-//  pinMode(2, INPUT_PULLUP);
-//  attachInterrupt(digitalPinToInterrupt(2), changeMode, RISING);
+    if(state == LOW)
+      dip_switch_state |= 1 << (DIP_SWITCH_SIZE - i - 1);
+  }
+
+  startChannel = dip_switch_state;
 }
 
 int step = 0;
@@ -75,6 +88,7 @@ void loop() {
       analogWrite(Laser1, L1DefaultLevel);
       analogWrite(Laser2, L2DefaultLevel);
       analogWrite(Laser3, L3DefaultLevel);
-      analogWrite(Laser4, L4DefaultLevel);    
+      analogWrite(Laser4, L4DefaultLevel);
+      delay(100);
   }
 }
