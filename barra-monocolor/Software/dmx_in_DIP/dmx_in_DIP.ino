@@ -3,21 +3,27 @@
 
 #include "data.h"
 
-int bar_id = 1;
+int bar_id = 0;
 
 const int Laser1 = 3;
 const int Laser2 = 5;
 const int Laser3 = 6;
 const int Laser4 = 9;
 
-int startChannel = (bar_id * 4) + 1;
+int startChannel = 0;
 
 #define L1DefaultLevel 255
 #define L2DefaultLevel 255
 #define L3DefaultLevel 255
 #define L4DefaultLevel 255
 
+#define DIP_CHANNEL_SIZE 6
+#define DIP_MODE_SIZE 2
+
 byte speed = 20;
+
+const int CHANNEL_PINS[] = {A0, A1, A2, A3, A4, A5};
+const int MODE_PINS[] = {A6, A7};
 
 // 0 for ALL ON
 // 1 for FUN MODE
@@ -42,6 +48,32 @@ void setup() {
   analogWrite(Laser2, L2DefaultLevel);
   analogWrite(Laser3, L3DefaultLevel);
   analogWrite(Laser4, L4DefaultLevel);
+
+  for(int i = 0; i < DIP_CHANNEL_SIZE; i++)
+    pinMode(CHANNEL_PINS[i], INPUT_PULLUP);
+  for(int i = 0; i < DIP_MODE_SIZE; i++)
+    pinMode(MODE_PINS[i], INPUT_PULLUP);
+  delay(50);
+  
+  int dip_switch_state = 0;
+  for(int i = 0; i < DIP_CHANNEL_SIZE; i++) {
+    int state = digitalRead(CHANNEL_PINS[i]);
+
+    if(state == LOW)
+      dip_switch_state |= 1 << (DIP_CHANNEL_SIZE - i - 1);
+  }
+  int state_pin_0 = digitalRead(MODE_PINS[0]);
+  int state_pin_1 = digitalRead(MODE_PINS[1]);
+
+  if((state_pin_0 == HIGH) && (state_pin_1 == HIGH))
+    mode = 0;
+  else if((state_pin_0 == HIGH) && (state_pin_1 == LOW))
+    mode = 1;
+  else if((state_pin_0 == LOW) && (state_pin_1 == HIGH))
+    mode = 2;
+
+  bar_id = dip_switch_state;
+  startChannel = bar_id * 4 + 1;
 }
 
 int step = 0;
