@@ -32,9 +32,9 @@ void loop() {
   analogWrite(Laser3, L3DefaultLevel);
   analogWrite(Laser4, L4DefaultLevel);
   delay(500);
-  analogWrite(Laser1, 0);
+/*  analogWrite(Laser1, 0);
   analogWrite(Laser2, 0);
   analogWrite(Laser3, 0);
   analogWrite(Laser4, 0);
-  delay(500);
+  delay(500);*/
 }

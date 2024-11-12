@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -283,7 +283,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "shifter.maxpat",
-				"bootpath" : "~/Desktop/work/Lasers/Lasers/barra-monocolor/MAX patches/new_way",
+				"bootpath" : "~/Desktop/work/Lasers/Lasers/barra-monocolor/MAX patches/utilities",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

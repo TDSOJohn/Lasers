@@ -22,9 +22,6 @@ int startChannel = 0;
 
 byte speed = 20;
 
-const int CHANNEL_PINS[] = {A0, A1, A2, A3, A4, A5};
-const int MODE_PINS[] = {A6, A7};
-
 // 0 for ALL ON
 // 1 for FUN MODE
 // 2 for DMX MODE
@@ -49,19 +46,23 @@ void setup() {
   analogWrite(Laser3, L3DefaultLevel);
   analogWrite(Laser4, L4DefaultLevel);
 
-  for(int i = 0; i < DIP_CHANNEL_SIZE; i++)
-    pinMode(CHANNEL_PINS[i], INPUT_PULLUP);
-  for(int i = 0; i < DIP_MODE_SIZE; i++)
-    pinMode(MODE_PINS[i], INPUT_PULLUP);
-  delay(50);
+  pinMode(A0, INPUT_PULLUP);
+  pinMode(A1, INPUT_PULLUP);
+  pinMode(A2, INPUT_PULLUP);
+  pinMode(A3, INPUT_PULLUP);
+  pinMode(A4, INPUT_PULLUP);
+  pinMode(A5, INPUT_PULLUP);
+  pinMode(A6, INPUT_PULLUP);
+  pinMode(A7, INPUT_PULLUP);
   
-  int dip_switch_state = 0;
-  for(int i = 0; i < DIP_CHANNEL_SIZE; i++) {
-    int state = digitalRead(CHANNEL_PINS[i]);
-
-    if(state == LOW)
-      dip_switch_state |= 1 << (DIP_CHANNEL_SIZE - i - 1);
-  }
+  delay(50);
+  bar_id = !digitalRead(A0);
+  delay(50);
+  bar_id += (!digitalRead(A1) * 2);
+  delay(50);
+  bar_id += (!digitalRead(A2) * 4);
+  delay(50);
+/*
   int state_pin_0 = digitalRead(MODE_PINS[0]);
   int state_pin_1 = digitalRead(MODE_PINS[1]);
 
@@ -71,8 +72,7 @@ void setup() {
     mode = 1;
   else if((state_pin_0 == LOW) && (state_pin_1 == HIGH))
     mode = 2;
-
-  bar_id = dip_switch_state;
+*/
   startChannel = bar_id * 4 + 1;
 }
 
