@@ -6828,7 +6828,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 260.35 35.56 270)
+		(at 260.35 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6838,7 +6838,7 @@
 		)
 		(uuid "776ab371-a6a5-492b-a93f-ee30709cdf1b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.35 42.4157 90)
+			(at 260.35 34.7957 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10935,73 +10935,6 @@
 			(project "dmx_to_pwm"
 				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 260.35 33.02 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "905c898d-a702-4343-a070-797eb8a1a09c")
-		(property "Reference" "H5"
-			(at 262.89 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 262.89 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 260.35 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 260.35 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 260.35 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a933d91-6663-4e6f-8af4-98bba1cdead6")
-		)
-		(instances
-			(project ""
-				(path "/fe39f169-33b8-46fd-886b-c754b4eb741b"
-					(reference "H5")
 					(unit 1)
 				)
 			)
