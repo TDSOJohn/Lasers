@@ -10,10 +10,10 @@
 // FUN MODE+-STATIC-----PTRN------PTRN------PTRN------PTRN------PTRN------PTRN   .
 //         |         .         .         .         .         .         .         .
 //         |    1:   .    0:   .         .         .         .         .         .
-//         +--ANIM---+---SEQ-----SPEED-----SPEED-----SPEED------PTRN------PTRN   .
+//         +--ANIM---+---SEQ------SPEED-----SPEED-----SPEED-----PTRN------PTRN   .
 //         .         |         .         .         .         .         .         .
 //         .         |    1:   .         .         .         .         .         .
-//         .         +--RANDOM---SPEED-----SPEED-----SPEED------PTRN------PTRN   .
+//         .         +--RANDOM----SPEED-----SPEED-----SPEED-----PTRN------PTRN   .
 //         .         .         .         .         .         .         .         .
 //    1:   .         .         .         .         .         .         .         .
 // DMX MODE--CH SEL----CH SEL----CH SEL----CH SEL----CH SEL----CH SEL----CH SEL  .
@@ -72,7 +72,6 @@ void setup() {
     if(!digitalRead(A1)) {
       settings.mode = 2;
       settings.anim_type = !digitalRead(A2);
-      settings.curr_pattern = 0;
       settings.speed = !digitalRead(A3);
       delay(30);
       settings.speed += (!digitalRead(A4) * 2);
@@ -83,6 +82,7 @@ void setup() {
       delay(30);
       settings.pattern += (!digitalRead(A7) * 2);
       delay(30);
+      settings.curr_pattern = settings.pattern;
     }
     // static mode
     else {
