@@ -1,12 +1,11 @@
 
 #include <DMXSerial.h>
 
-const int out_pin = 9;
-
-int startChannel = 62;
-
 #define DefaultLevel 0
 
+const int out_pin = 9;
+
+int startChannel = 130;
 
 // 0 for ALWAYS ON
 // 1 for DMX MODE

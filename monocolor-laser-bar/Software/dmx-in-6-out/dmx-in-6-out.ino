@@ -1,7 +1,8 @@
 
 #include <DMXSerial.h>
-
 #include "data.h"
+
+#define DefaultLevel 255
 
 int bar_id = 0;
 
@@ -14,7 +15,6 @@ const int Laser6 = 11;
 
 int startChannel = 0;
 
-#define DefaultLevel 255
 
 byte speed = 20;
 

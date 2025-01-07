@@ -3,6 +3,8 @@
 
 #include "data.h"
 
+#define DefaultLevel 255
+
 int bar_id = 0;
 
 const int Laser1 = 3;
@@ -11,8 +13,6 @@ const int Laser3 = 6;
 const int Laser4 = 9;
 
 int startChannel = 0;
-
-#define DefaultLevel 255
 
 byte speed = 20;
 
