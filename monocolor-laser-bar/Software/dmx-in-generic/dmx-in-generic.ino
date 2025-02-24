@@ -5,9 +5,9 @@
 //  [dip switch pins 3..6]
 int bar_id = 0;
 
-int num_of_lasers = 3;
+int num_of_lasers = 4;
 
-int startChannel = 81;
+int startChannel = 1;
 
 const int laserOut[6] = {3, 5, 6, 9, 10, 11};
 int funModeVal[6] = {0, 0, 0, 0, 0, 0};
