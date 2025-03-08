@@ -7,7 +7,7 @@ int bar_id = 0;
 
 int num_of_lasers = 4;
 
-int startChannel = 1;
+int startChannel = 300;
 
 const int laserOut[6] = {3, 5, 6, 9, 10, 11};
 int funModeVal[6] = {0, 0, 0, 0, 0, 0};
@@ -54,7 +54,7 @@ void setup() {
   mode = !digitalRead(A0);
   delay(50);
 
-  startChannel = bar_id * num_of_lasers + 1;
+  startChannel = bar_id * num_of_lasers + startChannel + 1;
 
   for(int i = 0; i < num_of_lasers; i++)
     DMXSerial.write(startChannel + i, defaultLevel);
