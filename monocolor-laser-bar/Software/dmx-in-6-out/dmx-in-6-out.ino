@@ -2,91 +2,87 @@
 #include <DMXSerial.h>
 #include "data.h"
 
-#define DefaultLevel 255
-
+//  [dip switch pins 3..6]
 int bar_id = 0;
 
-const int Laser1 = 3;
-const int Laser2 = 5;
-const int Laser3 = 6;
-const int Laser4 = 9;
-const int Laser5 = 10;
-const int Laser6 = 11;
+int num_of_lasers = 4;
 
-int startChannel = 0;
+int startChannel = 1;
 
+const int laserOut[6] = {3, 5, 6, 9, 10, 11};
+int funModeVal[6] = {0, 0, 0, 0, 0, 0};
+
+const int primes[6] = {1, 2, 3, 5, 7, 11};
+
+const int defaultLevel = 255;
 
 byte speed = 20;
 
-// 0 for ALL ON
-// 1 for DMX MODE
-byte mode = 1;
+//  [dip switch pin 1]
+//  0 for DMX MODE ( all lasers on if no dmx is received for 10s )
+//  1 for FUN MODE
+byte mode = 0;
+
+//  [dip switch pin 2]
+byte pattern = 0;
+
 
 void setup() {
   // initialize dmx serial as receiver
   DMXSerial.init(DMXReceiver);
+
+  for(int i = 0; i < num_of_lasers; i++) {
+    pinMode(laserOut[i], OUTPUT);
+    delay(10);
+    analogWrite(laserOut[i], defaultLevel);
+  }
+
+  for(int i = A0; i <= A5; i++)
+    pinMode(i, INPUT_PULLUP);
+  delay(50);
   
-  DMXSerial.write(1, DefaultLevel);
-  DMXSerial.write(2, DefaultLevel);
-  DMXSerial.write(3, DefaultLevel);
-  DMXSerial.write(4, DefaultLevel);
-  DMXSerial.write(5, DefaultLevel);
-  DMXSerial.write(6, DefaultLevel);
-
-  pinMode(Laser1, OUTPUT);
-  pinMode(Laser2, OUTPUT);
-  pinMode(Laser3, OUTPUT);
-  pinMode(Laser4, OUTPUT);
-  pinMode(Laser5, OUTPUT);
-  pinMode(Laser6, OUTPUT);
-
-  analogWrite(Laser1, DefaultLevel);
-  analogWrite(Laser2, DefaultLevel);
-  analogWrite(Laser3, DefaultLevel);
-  analogWrite(Laser4, DefaultLevel);
-  analogWrite(Laser5, DefaultLevel);
-  analogWrite(Laser6, DefaultLevel);
-
-  
-  pinMode(A0, INPUT_PULLUP);
-  pinMode(A1, INPUT_PULLUP);
-  pinMode(A2, INPUT_PULLUP);
-  pinMode(A3, INPUT_PULLUP);
-  pinMode(A4, INPUT_PULLUP);
-  pinMode(A5, INPUT_PULLUP);
-  pinMode(A6, INPUT_PULLUP);
-  pinMode(A7, INPUT_PULLUP);
+  bar_id = !digitalRead(A2);
   delay(50);
-  bar_id = !digitalRead(A0);
+  bar_id += (!digitalRead(A3) * 2);
   delay(50);
-  bar_id += (!digitalRead(A1) * 2);
+  bar_id += (!digitalRead(A4) * 4);
   delay(50);
-  bar_id += (!digitalRead(A2) * 4);
+  bar_id += (!digitalRead(A5) * 8);
   delay(50);
-  bar_id += (!digitalRead(A3) * 8);
 
-  startChannel = bar_id * 6 + 1;
+  pattern = !digitalRead(A1);
+  delay(50);
+  mode = !digitalRead(A0);
+  delay(50);
+
+  startChannel = bar_id * num_of_lasers + startChannel;
+
+  for(int i = 0; i < num_of_lasers; i++)
+    DMXSerial.write(startChannel + i, defaultLevel);
 }
 
-int step = 0;
 
 void loop() {
   unsigned long lastPacket = DMXSerial.noDataSince();
 
-  if(mode == 1 && lastPacket < 10000) {
-    analogWrite(Laser1, DMXSerial.read(startChannel));
-    analogWrite(Laser2, DMXSerial.read(startChannel + 1));
-    analogWrite(Laser3, DMXSerial.read(startChannel + 2));
-    analogWrite(Laser4, DMXSerial.read(startChannel + 3));
-    analogWrite(Laser5, DMXSerial.read(startChannel + 4));
-    analogWrite(Laser6, DMXSerial.read(startChannel + 5));
+  if(mode == 0 && lastPacket < 10000) {
+    for(int i = 0; i < num_of_lasers; i++)
+      analogWrite(laserOut[i], DMXSerial.read(startChannel + i));
+  } else if(mode == 0 && lastPacket >= 10000) {
+    for(int i = 0; i < num_of_lasers; i++)
+      analogWrite(laserOut[i], defaultLevel);
+    delay(100);
+  } else if(mode == 1 && pattern == 0) {
+    for(int i = 0; i < num_of_lasers; i++)
+      analogWrite(laserOut[i], rand() % 256);
+    delay(250);
   } else {
-      analogWrite(Laser1, DefaultLevel);
-      analogWrite(Laser2, DefaultLevel);
-      analogWrite(Laser3, DefaultLevel);
-      analogWrite(Laser4, DefaultLevel);
-      analogWrite(Laser5, DefaultLevel);
-      analogWrite(Laser6, DefaultLevel);
-      delay(100);
+    for(int i = 0; i < num_of_lasers; i++) {
+      analogWrite(laserOut[i], funModeVal[i]);
+      funModeVal[i] += primes[i];
+      if(funModeVal[i] > 255)
+        funModeVal[i] -= 255;
+    }
+    delay(25);
   }
 }
