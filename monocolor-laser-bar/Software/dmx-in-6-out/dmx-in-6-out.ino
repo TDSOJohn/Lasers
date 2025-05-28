@@ -2,29 +2,26 @@
 #include <DMXSerial.h>
 #include "data.h"
 
-//  [dip switch pins 3..6]
-int bar_id = 0;
 
-int num_of_lasers = 4;
+int num_of_lasers = 6;
 
-int startChannel = 1;
+// set using DIP switches on the pcb
+int start_channel = 1;
 
 const int laserOut[6] = {3, 5, 6, 9, 10, 11};
 int funModeVal[6] = {0, 0, 0, 0, 0, 0};
 
 const int primes[6] = {1, 2, 3, 5, 7, 11};
 
-const int defaultLevel = 255;
+const int defaultLevel = 0;
 
 byte speed = 20;
 
-//  [dip switch pin 1]
-//  0 for DMX MODE ( all lasers on if no dmx is received for 10s )
-//  1 for FUN MODE
+// 0 = DMX
+// 1 = FUN
+// 2 = ALL ON
+// DIP switch all 1 (value 255): fun mode
 byte mode = 0;
-
-//  [dip switch pin 2]
-byte pattern = 0;
 
 
 void setup() {
@@ -33,56 +30,58 @@ void setup() {
 
   for(int i = 0; i < num_of_lasers; i++) {
     pinMode(laserOut[i], OUTPUT);
-    delay(10);
-    analogWrite(laserOut[i], defaultLevel);
+    delay(200);
+    analogWrite(laserOut[i], 255);
   }
 
   for(int i = A0; i <= A5; i++)
     pinMode(i, INPUT_PULLUP);
   delay(50);
   
-  bar_id = !digitalRead(A2);
+  start_channel = !digitalRead(A0);
   delay(50);
-  bar_id += (!digitalRead(A3) * 2);
+  start_channel += (!digitalRead(A1) * 2);
   delay(50);
-  bar_id += (!digitalRead(A4) * 4);
+  start_channel += (!digitalRead(A2) * 4);
   delay(50);
-  bar_id += (!digitalRead(A5) * 8);
+  start_channel += (!digitalRead(A3) * 8);
+  delay(50);
+  start_channel += (!digitalRead(A4) * 16);
+  delay(50);
+  start_channel += (!digitalRead(A5) * 32);
   delay(50);
 
-  pattern = !digitalRead(A1);
-  delay(50);
-  mode = !digitalRead(A0);
-  delay(50);
-
-  startChannel = bar_id * num_of_lasers + startChannel;
+  if(start_channel == 0)
+    mode = 2;
+  else if(start_channel == 63)
+    mode = 1;
 
   for(int i = 0; i < num_of_lasers; i++)
-    DMXSerial.write(startChannel + i, defaultLevel);
+    DMXSerial.write(start_channel + i, defaultLevel);
 }
 
 
 void loop() {
   unsigned long lastPacket = DMXSerial.noDataSince();
 
+  // DMX mode and last packet < 10s
   if(mode == 0 && lastPacket < 10000) {
     for(int i = 0; i < num_of_lasers; i++)
-      analogWrite(laserOut[i], DMXSerial.read(startChannel + i));
+      analogWrite(laserOut[i], DMXSerial.read(start_channel + i));
   } else if(mode == 0 && lastPacket >= 10000) {
+  // DMX mode and last packet > 10s
     for(int i = 0; i < num_of_lasers; i++)
       analogWrite(laserOut[i], defaultLevel);
     delay(100);
-  } else if(mode == 1 && pattern == 0) {
+  } else if(mode == 1) {
+  // FUN mode
     for(int i = 0; i < num_of_lasers; i++)
       analogWrite(laserOut[i], rand() % 256);
     delay(250);
   } else {
-    for(int i = 0; i < num_of_lasers; i++) {
-      analogWrite(laserOut[i], funModeVal[i]);
-      funModeVal[i] += primes[i];
-      if(funModeVal[i] > 255)
-        funModeVal[i] -= 255;
-    }
+  // ALL ON mode
+    for(int i = 0; i < num_of_lasers; i++)
+      analogWrite(laserOut[i], 255);
     delay(25);
   }
 }

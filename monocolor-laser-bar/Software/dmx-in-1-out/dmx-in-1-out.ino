@@ -5,7 +5,7 @@
 
 const int out_pin = 9;
 
-int startChannel = 89;
+int startChannel = 50;
 
 // 0 for ALWAYS ON
 // 1 for DMX MODE
