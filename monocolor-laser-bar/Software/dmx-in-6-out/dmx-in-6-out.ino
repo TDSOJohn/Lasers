@@ -3,7 +3,7 @@
 #include "data.h"
 
 
-int num_of_lasers = 6;
+int num_of_lasers = 4;
 
 // set using DIP switches on the pcb
 int start_channel = 1;
