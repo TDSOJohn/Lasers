@@ -3,9 +3,9 @@
 
 #define DefaultLevel 0
 
-const int out_pin = 9;
+const int out_pin = 12;
 
-int startChannel = 50;
+int startChannel = 25;
 
 // 0 for ALWAYS ON
 // 1 for DMX MODE
@@ -15,11 +15,13 @@ void setup() {
   // initialize dmx serial as receiver
   DMXSerial.init(DMXReceiver);
   
-  DMXSerial.write(1, DefaultLevel);
+  DMXSerial.write(startChannel, DefaultLevel);
 
   pinMode(out_pin, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 
-  analogWrite(out_pin, DefaultLevel);
+  digitalWrite(out_pin, LOW);
+  // used for debugging porpuses rn
 }
 
 int step = 0;
@@ -29,13 +31,18 @@ void loop() {
 
   if(mode == 1 && lastPacket < 10000) {
     byte value_in = DMXSerial.read(startChannel);
-    if(value_in >= 128)
-      analogWrite(out_pin, 255);
-    else
-      analogWrite(out_pin, 0);
+    if(value_in >= 128) {
+      digitalWrite(LED_BUILTIN, HIGH);
+      digitalWrite(out_pin, 255);
+    }
+    else {
+      digitalWrite(LED_BUILTIN, LOW);
+      digitalWrite(out_pin, 0);
+      delay(300);
+    }
   }
   else {
-      analogWrite(out_pin, DefaultLevel);
-      delay(1000);
+      digitalWrite(out_pin, HIGH);
+      delay(250);
   }
 }
