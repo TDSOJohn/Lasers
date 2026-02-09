@@ -3,9 +3,9 @@
 
 #define DefaultLevel 0
 
-const int out_pin = 12;
+const int out_pin = 9;
 
-int startChannel = 25;
+int startChannel = 18;
 
 // 0 for ALWAYS ON
 // 1 for DMX MODE
@@ -42,7 +42,7 @@ void loop() {
     }
   }
   else {
-      digitalWrite(out_pin, HIGH);
+      digitalWrite(out_pin, LOW);
       delay(250);
   }
 }
